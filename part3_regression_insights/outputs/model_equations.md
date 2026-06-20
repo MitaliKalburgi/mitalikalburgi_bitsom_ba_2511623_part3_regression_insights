@@ -59,10 +59,7 @@ Each one-point increase in inventory availability is associated with about ₹2,
 
 **monthly_sales = 148,347.11**
 
-. 1.17 × marketing_spend 
-. 33.66 × footfall − 58,920.81 × avg_discount_pct
-. 3,001.20 × inventory_availability_pct − 11,433.46 × dummy_store_type_HighStreet − 28,009.31 × dummy_store_type_Residential
-. 10,472.25 × dummy_store_type_Airport
+**monthly_sales = 148347.11 + (1.17 × marketing_spend) + (33.66 × footfall) − (58920.81 × avg_discount_pct) + (3001.20 × inventory_availability_pct) − (11433.46 × dummy_store_type_HighStreet) − (28009.31 × dummy_store_type_Residential) + (10472.25 × dummy_store_type_Airport)**
 
 R² = 0.821 — this model explains about 82% of the variation in monthly sales across stores, a substantial improvement over any single-variable model.
 
