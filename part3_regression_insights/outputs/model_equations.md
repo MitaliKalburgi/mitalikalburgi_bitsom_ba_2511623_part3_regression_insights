@@ -5,7 +5,7 @@
 Two categorical variables required dummy encoding before they could be used in regression: **region** and **store_type**. Both had 4 categories each, so each was converted into 3 dummy (0/1) columns rather than 4 — using all 4 would create perfect redundancy (the dummy variable trap), since if a row is 0 across three categories, the fourth is already implied. One category per variable was deliberately left out to serve as the **reference category**, and every dummy coefficient in the regression is interpreted relative to that baseline.
 
 ### Region (reference category: East)
-| Dummy column | = 1 when region is... |
+| Dummy column | = 1 when region is |
 |---|---|
 | dummy_region_north | North |
 | dummy_region_south | South |
@@ -14,7 +14,7 @@ Two categorical variables required dummy encoding before they could be used in r
 A row with all three columns equal to 0 represents **East** — the reference region. East was chosen as the reference simply as a baseline convention; it carries no special statistical significance, and the choice doesn't affect model fit or significance, only how the coefficients read.
 
 ### Store Type (reference category: Mall)
-| Dummy column | = 1 when store_type is... |
+| Dummy column | = 1 when store_type is |
 |---|---|
 | dummy_store_type_HighStreet | High Street |
 | dummy_store_type_Residential | Residential |
